@@ -1,6 +1,6 @@
 package 二分查找
 
-func searchMatrix(matrix [][]int, target int) bool {
+func searchMatrixII(matrix [][]int, target int) bool {
 	m, n := len(matrix), len(matrix[0])
 	row, col := 0, n-1
 	for row < m && col >= 0 {
