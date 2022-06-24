@@ -17,7 +17,7 @@ func backtrack(nums []int) [][]int {
 		//该算法还要进入别的递归分支继续搜索，还要继续将这个 path 传给别的递归调用，
 		//它所指向的内存空间还要继续被操作，所以 res 中的 path 的内容会被改变，这就不对。
 		// 所以要弄一份当前的拷贝，放入 res，这样后续对 path 的操作，就不会影响已经放入 res 的内容。
-		temp := make([]int, len(nums))
+		temp := make([]int, len(arr))
 		copy(temp, arr)
 		result = append(result, temp)
 		return result
